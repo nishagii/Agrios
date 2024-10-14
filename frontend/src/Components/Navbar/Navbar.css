@@ -1,0 +1,108 @@
+.nav-logo {
+    margin: 20px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 1px 3px -2px black;
+    background-color: hwb(66 40% 0% / 0.188);
+    padding:15px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: #A3A29C;
+    gap: 70px;
+    font-size: 1rem;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 3px;
+}
+
+.nav-menu hr {
+    border: none;
+    width: 60px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #4BAF47;
+}
+
+/* Link styling */
+.nav-link {
+    text-decoration: none;
+    color: inherit;  /* Inherit the color from parent */
+    transition: color 0.3s ease;
+}
+
+.nav-link.active {
+    font-weight: bold; /* Optional: make the active link bold */
+}
+
+/* Hover effect */
+.nav-link:hover {
+    color: #4BAF47;
+    font-weight: bold;
+}
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.nav-login-cart button {
+    width: 90px;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #4BAF47;
+    color: whitesmoke;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 5px;
+}
+
+.nav-login-cart button:hover {
+    background-color:transparent;
+    color: #4CAF50;
+    /* border: 1px solid #4BAF47; */
+    font-size: 16.5px;
+    font-weight: 800;
+    width: 110px;
+}
+
+.nav-cart-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    margin-left: -55px;
+    border-radius: 7px;
+    font-size: 10px;
+    background: red;
+    color: white;
+    padding: 1.3px 4px;
+}
+
+.nav-cart-count:hover {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+ 
