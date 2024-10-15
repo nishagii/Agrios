@@ -1,0 +1,245 @@
+/* Container for the header */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.notlog{
+  color: rgb(255, 255, 255);
+}
+
+.notlog h1{
+  font-size: 55px;
+}
+
+.header-left h1 {
+  margin: 0;
+}
+.intro{
+  color: black;
+}
+
+.introdiv{
+  align-items: center;
+}
+
+.header-right p {
+  margin: 5px 0;
+  text-align: right;
+}
+
+/* Hero Section Styling */
+.hero {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Position relative to contain the absolute pseudo-element */
+  color: white;
+  background: url('../../Components/Assets/bg1.jpeg')  center center;
+  background-size:contain;
+  text-align: center;
+  align-items: center;
+  padding: 5px 5px;
+  height: 40vh;
+  z-index: 1; /* Set higher z-index for content above overlay */
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Black overlay with 50% opacity */
+  z-index: -1; /* Push the overlay behind the content */
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 48px;
+}
+
+/* Content Section Styling */
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.text-content {
+  flex: 2;
+  background-color: #f0ff6530;
+  box-shadow: 0 4px 8px 0 rgba(112, 112, 112, 0.328), 0 0 rgba(255, 255, 86, 0.713);
+  transition: all 0.35s ease; 
+  padding: 10px 50px;
+  text-align: justify;
+  line-height: 1.8;
+  border-radius: 20px;
+}
+
+.text-content:hover {
+   box-shadow: none;
+  transform: translateY(10px);
+}
+
+.text-content h1 {
+  font-size: 35px;
+}
+
+.details {
+  flex: 1;
+  color: white;
+  position: relative; /* Ensure the pseudo-element overlay is contained */
+  background-color: rgba(178, 255, 101, 0.188);
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-left: 20px;
+  box-shadow: 0 4px 8px 0 rgba(112, 112, 112, 0.328), 0 0 rgba(255, 255, 86, 0.713);
+  transition: all 0.35s ease;
+  background: url('../../Components/Assets/bg6.jpg') center center;
+  background-size: cover;
+  z-index: 1; /* Ensure content appears above the overlay */
+}
+
+.details::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  border-radius: 20px; /* Match the border-radius of .details */
+  z-index: -1; /* Keep the overlay behind the content */
+}
+
+
+.details:hover {
+  box-shadow: none;
+  transform: translateY(10px);
+}
+
+.details h1 {
+  font-size: 35px;
+}
+
+.details p {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 3;
+  font-weight: bold;
+  background-color: rgba(255, 254, 254, 0.332);
+}
+
+h2{
+  margin-top: 20px;
+}
+
+/* Products Section Styling */
+.products {
+  padding: 40px;
+  padding-top: 0px;
+  text-align: center;
+  background-color: #ffffff;
+
+}
+
+.product-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
+
+.card {
+  flex: 1;
+  min-width: 240px; /* Ensures that cards have a minimum width */
+  max-width: 300px; /* Ensures that cards have a maximum width */
+  margin: 10px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+    background-color: #f0ff6530;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  max-width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.card h4 {
+  margin-top: 10px;
+}
+
+/* Footer Section Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
+  margin-top: 20px;
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card h4 {
+    margin-top: 10px;
+}
+
+.products h4{
+  color: black;
+}
+
+.products h3{
+  color: black;
+}
+
+.product-cards{
+  margin-right: 70px;
+}
+
+.intro{
+  display: flex;
+  margin-left: 10px;
+  margin-top: 30px;
+
+}
+
+.details p{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.not-login{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.not-login a{
+  font-size: 15px;
+  /* remove the underline of link */
+  text-decoration: none;
+  background-color: #4CAF50;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+
+}
