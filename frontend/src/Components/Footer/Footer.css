@@ -1,0 +1,80 @@
+/* Footer */
+.contact-footer {
+    background-color: #64ef6921;
+    color: rgb(0, 0, 0);
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.footer-section {
+    width: 20%;
+}
+
+.footer-section h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.footer-section ul a {
+    text-decoration: none;
+    color:#000000;
+}
+.footer-section ul li:hover {
+    text-decoration: underline;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+}
+
+.agrios{
+    font-weight: bold;
+}
+.footer-section input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 80%;
+}
+
+.footer-section button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4BAF47;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.footer-section button:hover {
+    background-color: #fff;
+    color: #4BAF47;
+}
+
+/* Social Media Icons (placeholders) */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.button{
+    margin-top: px;
+}
