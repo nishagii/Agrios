@@ -1,0 +1,21 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+
+
+}
+.admin_name{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+}
+.profile_img{
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
